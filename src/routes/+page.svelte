@@ -14,6 +14,17 @@
 	};
 </script>
 
+<style>
+	iframe {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100vw;
+		height: 100vh;
+		border: none;
+	}
+</style>
+
 <main>
 	<h1>SvelteKit & Supabase Auth</h1>
 	{#if data.session}
@@ -28,4 +39,5 @@
 			<a href="/register" class="btn btn-secondary">Register</a>
 		</div>
 	{/if}
+	<iframe src="http://localhost:5174/" title="Interactive Content" allowfullscreen></iframe>
 </main>
